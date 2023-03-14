@@ -11,9 +11,7 @@ base_width = 150
 size = (base_width/float(logo.size[0]))
 hsize = int((float(logo.size[1])*float(size)))
 logo = logo.resize((base_width, hsize), Image.ANTIALIAS)
-QRcode = qrcode.QRCode(
-	error_correction=qrcode.constants.ERROR_CORRECT_H
-)
+
 # taking url or text
 url = 'http://www.vnrvjiet.ac.in/'
 QRcode.add_data(url)
